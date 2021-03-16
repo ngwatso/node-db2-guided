@@ -1,7 +1,9 @@
 exports.up = function(knex) {
-  return knex.schema
+  return knex.schema.createTable('fruits', table => {
+
+  })
 };
 
 exports.down = function(knex) {
-  // undoes those changes
+  return knex.schema.dro
 };
