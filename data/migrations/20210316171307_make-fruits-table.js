@@ -2,8 +2,8 @@ exports.up = function (knex) {
   return knex.schema
     .createTable('fruits', table => {
       table.increments('fruit_id')
-      table.text('name')
-      table.decimal()
+      table.text('name').unique().notNullable()
+      table.decimal('weight_oz').notNullable()
     })
   // .createTable('users', table => {
 
