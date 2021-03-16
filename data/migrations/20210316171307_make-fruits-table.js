@@ -1,9 +1,13 @@
-exports.up = function(knex) {
-  return knex.schema.createTable('fruits', table => {
+exports.up = function (knex) {
+  return knex.schema
+    .createTable('fruits', table => {
 
-  })
+    })
+    .createTable('users', table() => {
+
+    })
 };
 
-exports.down = function(knex) {
-  return knex.schema.dro
+exports.down = function (knex) {
+  return knex.schema.dropTableIfExists('fruits')
 };
