@@ -3,9 +3,9 @@ exports.seed = function(knex) {
   return knex('fruits').truncate()
     .then(function () {
       return knex('fruits').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {name: 'banana', weight_oz: 1.5, delicious: 0, color: 'red'},
+        {name: 'banana', weight_oz: 1.5, delicious: 0, color: 'red'},
+        {name: 'banana', weight_oz: 1.5, delicious: 0, color: 'red'}
       ]);
     });
 };
