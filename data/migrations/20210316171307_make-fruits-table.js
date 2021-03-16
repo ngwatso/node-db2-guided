@@ -4,6 +4,7 @@ exports.up = function (knex) {
       table.increments('fruit_id')
       table.text('name').unique().notNullable()
       table.decimal('weight_oz').notNullable()
+      table.boolean('is_delicious').defaultTo(0)
     })
   // .createTable('users', table => {
 
