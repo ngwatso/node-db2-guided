@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  // does the structural changes to the db
+  return knex.schema
 };
 
 exports.down = function(knex) {
