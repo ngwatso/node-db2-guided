@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
   return knex.schema.table('fruits', table => {
-    table.string('color', 128).notNullable()
+    table.string('color', 128)
   })
 };
 
